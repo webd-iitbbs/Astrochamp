@@ -2,7 +2,7 @@
 /* =================================== */
 /*	Basic Style
 /* =================================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 .ref::before {
   font-weight: bold;
   font-size:18.5px;
@@ -13,10 +13,10 @@
 
 body {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     line-height: 21px;
 	  font-size: 13px;
-    color: rgba(3, 39, 30, 0.822);
+    color: rgba(3, 39, 30, 0.922);
 }
 
 ol, ul {
@@ -125,7 +125,7 @@ span.color {
 .mb50 {
 	margin-bottom: 50px;
 }
-
+@media only screen and (min-width: 601px) {
 #preloader {
   background-color: #646c8b;
   height: 100%;
@@ -135,9 +135,27 @@ span.color {
 }
 
 #preloader > img {
-  left: 34%;
-  position: absolute;
-  top:34%;
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 30vh;
+}
+}
+@media only screen and (max-width: 600px) {
+  #preloader {
+    background-color: #646c8b;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1100;
+  }
+  #preloader > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  width: 50%;
+  }
 }
 
 
